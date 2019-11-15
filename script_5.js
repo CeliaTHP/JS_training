@@ -68,7 +68,28 @@ console.log("The Book with the id 873495 is "+ books[x].title)
 }
 }
 console.log("\nDelete this id")
+let list;
 for(let x = 0; x < books.length; x++) {
-if (books[x].id === 133712){
-let sup = 0;
-sup = books[x]
+if (books[x].id !== 133712){
+list = books[x].title
+console.log(list)
+}
+}
+
+function check(a,b)
+{
+if (a.title < b.title)
+return -1;
+else if (a.title > b.title)
+return 1;
+ return 0;
+}
+
+console.log("\nSorted")
+s = "";
+s = (books.sort(check))
+for (let index in books)
+if (books[index].id !== 133712)
+{
+console.log(s[index].title)
+}

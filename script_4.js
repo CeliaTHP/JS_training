@@ -59,4 +59,3 @@ for (let index in entrepreneurs)
 {
 console.log(s[index].first+ " " + s[index].last)
 }
-
